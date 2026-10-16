@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diana Sichanhová – Computer Science student at FIT CTU in Prague. Skills, school projects and education.">
+    <title>Diana Sichanhová</title>
+    <link rel="icon" href="pics/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="pics/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="site-name" href="index.html">Diana Sichanhová</a>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img class="hero-photo" src="pics/profile.jpg" alt="Diana Sichanhová" width="926" height="1200">
+            <div>
+                <h1>Diana<br>Sichanhová</h1>
+                <p class="hero-intro">
+                    Third-year Computer Science student at the Faculty of Information Technology,
+                    CTU in Prague, specialising in Web Engineering.
+                </p>
+                <div class="hero-links">
+                    <a class="button" href="#projects">See my projects</a>
+                    <a class="button button-outline" href="https://github.com/ohmydiana" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section-light">
+            <h2>About me</h2>
+            <p>
+                I'm Diana, a FIT CTU student from Slovakia trying to make my way in the world of web development.
+                During the past few years, solving complex problems became my motivation, as well as my everyday duty.
+                I enjoy both the logical and creative aspects of development, programming itself or other
+                parts of the IT world, and I'm always excited to learn something new.
+            </p>
+            <p>
+                Before FIT, I spent a year studying business at Avans University of Applied Sciences in the Netherlands.
+                This experience taught me a lot about the economics and management, as well as leadership, teamwork
+                and communication with people from different backgrounds. Although I enjoyed my time there, I quickly
+                realised my passion lies elsewhere, and so I followed it to FIT.
+            </p>
+            <p>
+                Outside of code, I was a vice president of a Junior Achievement student company called SmellMe,
+                I've been tutoring English since 2021 and have done part-time jobs that varied from lifeguarding to
+                working as a cashier in the USA.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <dl class="skill-list stagger">
+                <div>
+                    <dt>Programming</dt>
+                    <dd>C, C++, Java, JavaScript, PHP, SQL</dd>
+                </div>
+                <div>
+                    <dt>Web</dt>
+                    <dd>HTML, CSS, React, Node.js, REST APIs, JWT auth</dd>
+                </div>
+                <div>
+                    <dt>Data</dt>
+                    <dd>PostgreSQL, Oracle, SQLite, XML / XSLT, RDF / SPARQL, JSON-LD</dd>
+                </div>
+                <div>
+                    <dt>Concepts</dt>
+                    <dd>OOP, MVC, algorithms & data structures, UML</dd>
+                </div>
+                <div>
+                    <dt>Tools</dt>
+                    <dd>Git, GitHub, GitLab, Docker, Linux / Bash</dd>
+                </div>
+                <div>
+                    <dt>Languages</dt>
+                    <dd>Slovak (native), English (C1), Spanish (B1)</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section id="projects" class="section-light">
+            <h2>Projects</h2>
+            <div class="project-grid stagger">
+                <article class="project-card">
+                    <p class="project-meta">BI-VWM · pair project</p>
+                    <h3>Movie Recommender</h3>
+                    <p>
+                        Full-stack web app that recommends movies using user-based collaborative
+                        filtering on the MovieLens 100K dataset. Spearman, Pearson and cosine
+                        similarity written from scratch, plus an admin panel for tuning the parameters.
+                    </p>
+                    <ul class="tag-list">
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>JavaScript</li>
+                        <li>SQLite</li>
+                    </ul>
+                    <a href="https://github.com/ohmydiana/movie-recommender-collaborative-filtering" target="_blank">View on GitHub</a>
+                </article>
+                <article class="project-card">
+                    <p class="project-meta">BI-PJV · individual</p>
+                    <h3>The Drake Game</h3>
+                    <p>
+                        Turn-based strategy game inspired by chess. Game logic built with
+                        object-oriented design, graphical interface in JavaFX.
+                    </p>
+                    <ul class="tag-list">
+                        <li>Java</li>
+                        <li>JavaFX</li>
+                        <li>Maven</li>
+                    </ul>
+                    <a href="https://github.com/ohmydiana/javagame" target="_blank">View on GitHub</a>
+                </article>
+                <article class="project-card">
+                    <p class="project-meta">BI-MDF · individual</p>
+                    <h3>Restaurant Data Formats</h3>
+                    <p>
+                        One small dataset of restaurants, employees and customers modelled in RDF, SPARQL,
+                        XML, JSON-LD and CSV on the Web.
+                    </p>
+                    <ul class="tag-list">
+                        <li>RDF</li>
+                        <li>SPARQL</li>
+                        <li>XML</li>
+                        <li>CSV</li>
+                        <li>JSON-LD</li>
+                    </ul>
+                    <a href="https://github.com/ohmydiana/modern-data-formats" target="_blank">View on GitHub</a>
+                </article>
+            </div>
+            <p class="projects-more">
+                <a class="button button-outline" href="projects.html">All projects</a>
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ol class="timeline stagger">
+                <li>
+                    <p class="timeline-date"><time>2024</time> – present</p>
+                    <h3>CTU in Prague – Faculty of Information Technology</h3>
+                    <p class="timeline-degree">Bachelor's degree, Computer Science (Web Engineering)</p>
+                    <p>
+                        Programming, algorithms, databases and web development.
+                        Currently in my third year.
+                    </p>
+                </li>
+                <li>
+                    <p class="timeline-date"><time>2023</time> – <time>2024</time></p>
+                    <h3>Avans University of Applied Sciences, Netherlands</h3>
+                    <p class="timeline-degree">Bachelor's degree, International Business</p>
+                    <p>
+                        Global markets, economics and business processes. Strong emphasis on leadership and teamwork.
+                    </p>
+                </li>
+                <li>
+                    <p class="timeline-date"><time>2019</time> – <time>2023</time></p>
+                    <h3>Gymnázium Dubnica nad Váhom</h3>
+                    <p class="timeline-degree">Secondary school</p>
+                    <p>
+                        Focused on maths, logic and general knowledge. Graduated with
+                        a final exam in Mathematics, strengthening both analytical and logical thinking skills.
+                    </p>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+            <li>
+                <img src="pics/icons/mail.svg" alt="">
+                <span>Email</span>
+                <a href="mailto:didasich@gmail.com">didasich@gmail.com</a>
+            </li>
+            <li>
+                <img src="pics/icons/github.svg" alt="">
+                <span>GitHub</span>
+                <a href="https://github.com/ohmydiana" target="_blank">github.com/ohmydiana</a>
+            </li>
+            <li>
+                <img src="pics/icons/linkedin.svg" alt="">
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/diana-sichanhová-338220296/" target="_blank">linkedin.com/in/diana-sichanhová-338220296</a>
+            </li>
+        </ul>
+        <p class="copyright">© 2026 Diana Sichanhová</p>
+    </footer>
+</body>
+</html>

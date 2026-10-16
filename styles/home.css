@@ -1,0 +1,123 @@
+.hero {
+    display: grid;
+    gap: var(--space-xl);
+    padding-top: var(--space-xl);
+}
+
+.hero h1 {
+    margin-bottom: var(--space-l);
+}
+
+.hero-intro {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+}
+
+.hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+    margin-top: var(--space-xl);
+}
+
+.hero-photo {
+    justify-self: center;
+    width: 100%;
+    max-width: 22rem;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 1rem;
+}
+
+.about p {
+    font-size: 1.125rem;
+}
+
+.skill-list {
+    border-top: 1px solid var(--color-border);
+}
+
+.skill-list div {
+    display: grid;
+    gap: var(--space-xs);
+    padding-block: var(--space-m);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.skill-list dt {
+    font-family: var(--font-heading);
+    font-size: 1.375rem;
+    letter-spacing: 0.02em;
+    line-height: var(--line-height-heading);
+}
+
+.skill-list dd {
+    font-size: 1.125rem;
+}
+
+.timeline {
+    margin-left: 0.4rem;
+    border-left: 1px solid var(--color-border);
+}
+
+.timeline li {
+    position: relative;
+    padding-left: var(--space-xl);
+    padding-bottom: var(--space-xl);
+}
+
+.timeline li:last-child {
+    padding-bottom: 0;
+}
+
+.timeline li::before {
+    content: "";
+    position: absolute;
+    top: 0.3rem;
+    left: -0.45rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border: 2px solid var(--color-text);
+    border-radius: 50%;
+    background-color: var(--color-bg);
+}
+
+.timeline li:first-child::before {
+    border-color: var(--color-accent);
+    background-color: var(--color-accent);
+}
+
+.timeline-date {
+    margin-bottom: var(--space-xs);
+    font-size: var(--font-size-small);
+    color: var(--color-text-muted);
+}
+
+.timeline-degree {
+    color: var(--color-text-muted);
+}
+
+.timeline-degree + p {
+    margin-top: var(--space-s);
+}
+
+@media (min-width: 48em) {
+    .hero {
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+        gap: var(--space-xxl);
+        padding-top: var(--space-xxl);
+    }
+
+    .hero-photo {
+        max-width: none;
+    }
+
+    .skill-list div {
+        grid-template-columns: 14rem 1fr;
+        align-items: baseline;
+        padding-block: var(--space-l);
+    }
+}

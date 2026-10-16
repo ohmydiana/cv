@@ -1,0 +1,152 @@
+@page {
+    margin: 1.2cm;
+}
+
+body {
+    display: block;
+    min-height: 0;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 10.5pt;
+}
+
+body > header,
+.hero-links,
+.projects-more,
+.project-card > a,
+.copyright {
+    display: none;
+}
+
+body > main > section,
+body > footer {
+    padding: 0;
+    background-color: transparent;
+}
+
+body > main > section + section,
+body > footer {
+    margin-top: 0.6cm;
+}
+
+body > footer {
+    padding-top: 0.3cm;
+}
+
+.contact-list {
+    gap: 0.2cm 0.8cm;
+}
+
+.contact-list li {
+    display: block;
+}
+
+.contact-list img {
+    display: none;
+}
+
+.reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+}
+
+h1 {
+    font-size: 34pt;
+}
+
+h2 {
+    margin-bottom: 0.3cm;
+    font-size: 20pt;
+    break-after: avoid;
+}
+
+h3,
+.project-card h2 {
+    font-size: 13pt;
+}
+
+p {
+    max-width: none;
+}
+
+.hero {
+    padding-top: 0;
+    grid-template-columns: 4.5cm 1fr;
+    align-items: center;
+    gap: 0.8cm;
+}
+
+.hero-photo {
+    width: 4.5cm;
+    border-radius: 0.3cm;
+}
+
+.hero-intro,
+.about p,
+.skill-list dd {
+    font-size: 10.5pt;
+}
+
+.skill-list div {
+    grid-template-columns: 4cm 1fr;
+    padding-block: 0.15cm;
+}
+
+.skill-list dt {
+    font-size: 12pt;
+}
+
+.project-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3cm;
+}
+
+.project-card {
+    gap: 0.2cm;
+    padding: 0.4cm;
+    border-radius: 0.2cm;
+    break-inside: avoid;
+}
+
+.tag-list li {
+    padding: 0 0.2cm;
+}
+
+.timeline li,
+.skill-list div {
+    break-inside: avoid;
+}
+
+.timeline li {
+    padding-bottom: 0.25cm;
+}
+
+.timeline-degree + p {
+    margin-top: 0.1cm;
+}
+
+a:link,
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8.5pt;
+    color: #555555;
+    overflow-wrap: anywhere;
+}
+
+.contact-list a::after {
+    content: none;
+}
+
+.page-intro {
+    padding-top: 0;
+}
+
+.page-intro > p {
+    margin-bottom: 0.6cm;
+}
