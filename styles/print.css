@@ -13,6 +13,7 @@ body {
 body > header,
 .hero-links,
 .projects-more,
+.contact-cv,
 .project-card > a,
 .copyright {
     display: none;
